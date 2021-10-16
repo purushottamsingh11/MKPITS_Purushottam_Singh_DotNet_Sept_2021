@@ -34,9 +34,9 @@ printf("enter the octal num=");
 scanf("%d",&num);
 for(i=0;i<8;i++)
 {
-   n=num%10;
-   sum=sum+n*pow(8,i);
+   r[i]=num%10;
    num=num/10;
+   sum=sum+r[i]*pow(8,i);
 }
 printf("\n decimal num=%d",sum);
 
@@ -66,9 +66,9 @@ printf("enter the binary num=");
 scanf("%d",&num);
 for(i=0;i<8;i++)
 {
-   n=num%10;
-   sum=sum+n*pow(2,i);
+   r[i]=num%10;
    num=num/10;
+   sum=sum+r[i]*pow(2,i);
 }
 printf("\n decimal num=%d",sum);
 

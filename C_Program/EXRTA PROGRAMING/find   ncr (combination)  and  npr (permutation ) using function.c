@@ -1,4 +1,4 @@
-    #include<stdio.h>
+        #include<stdio.h>
 	int comb(int ,int );
 	int perm(int ,int ); 
 	int main()
@@ -8,7 +8,7 @@
   	printf("\n enter n for c to finding ncr and npr=");
   	scanf("%d%d",&n,&r);
   	printf("\n combination of %dc%d=%d",n,r,comb(n,r));
-    printf("\n permutation of %dp%d=%d",n,r,perm(n,r));
+        printf("\n permutation of %dp%d=%d",n,r,perm(n,r));
 	return 0;
 	}
 

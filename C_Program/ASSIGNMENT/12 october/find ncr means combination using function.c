@@ -26,10 +26,16 @@
 			return comb;
 			
 		    }
+
+
 		
 		
-  /*    #include<stdio.h>                      
-	int Comb_Num(int);                        /*  vvvvvvimp styl  */
+ 
+                       /*  vvvvvvimp styl  */
+
+
+/*    #include<stdio.h>                      
+	int Comb_Num(int);                      
 	int main()
 	{
 	 int n,r,ncr;

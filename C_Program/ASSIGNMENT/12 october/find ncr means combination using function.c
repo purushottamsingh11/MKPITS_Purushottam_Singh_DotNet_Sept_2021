@@ -2,10 +2,11 @@
 	int comb(int n,int r);
 	int main()
 	{
-        int n,r;
+        int n,r,ncr;
   	printf("\n enter n for c to finding ncr and npr=");
   	scanf("%d%d",&n,&r);
-  	printf("\n combination of %dc%d=%d",n,r,comb(n,r));
+        ncr=comb(n,r);
+  	printf("\n combination of %dc%d=%d",n,r,ncr);
 	return 0;
 	}
 

@@ -21,14 +21,14 @@
 	 {
 	 case '+': 
 	 printf("\nenter any two number for addition=");
-     scanf("%f%f",&a,&b);
+         scanf("%f%f",&a,&b);
 	 add=ADD(a,b);
 	 printf("\naddition of %1.2f and %1.2f=%1.2f",a,b,add); 
 	 break;
 	 
 	 case '-':
-     printf("\nenter any two number for substraction=");
-     scanf("%f%f",&a,&b);
+         printf("\nenter any two number for substraction=");
+         scanf("%f%f",&a,&b);
 	 SUB(a,b);
 	 break;
 	
@@ -39,9 +39,9 @@
 	
 	 case '/':
 	 div=DIV();
- /*  printf("\ncalculation of %1.2f is divided by %1.2f=%1.2f",a,b,div); */   /* why at output printing the value of a and b is wrong*/   /* bec in this type of function x & y not return value to a and b */
+     /*  printf("\ncalculation of %1.2f is divided by %1.2f=%1.2f",a,b,div); */   /* why at output printing the value of a and b is wrong*/   /* bec in this type of function x & y not return value to a and b */
 	 printf("\ndivision of two number=%1.2f",div);
-     break;
+         break;
 	 
 	 default:
 	 printf("\nwrong selection"); 
@@ -61,12 +61,12 @@
 	
 	
     
-    void SUB(float x , float y)
-	{
-	  float s;
-	  s=x-y;
-	 printf("\nsubtraction of %1.2f and %1.2f=%1.2f",x,y,s);
-	}
+       void SUB(float x , float y)
+	  {
+	   float s;
+	   s=x-y;
+	   printf("\nsubtraction of %1.2f and %1.2f=%1.2f",x,y,s);
+	  }
 	
 	
 	

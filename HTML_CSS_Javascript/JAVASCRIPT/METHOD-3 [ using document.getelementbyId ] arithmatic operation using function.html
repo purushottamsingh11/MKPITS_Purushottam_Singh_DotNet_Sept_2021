@@ -1,0 +1,55 @@
+<html>
+
+<head></head>
+
+<body>
+
+    <h1 id="A"> </h1>
+    <h2 id="B"> </h2>
+    <p id="c"> </p>
+    <pre id="d"> </pre>
+    
+        <script>
+            var x=add(6,9);
+            document.getElementById("A").innerHTML="addition of numbers is= " + x;
+
+           
+             document.getElementById("B").innerHTML = "subtraction of numbers is= " + sub(10, 6);
+
+            var z = mul(8 , 6)
+            document.getElementById("c").innerHTML = "multiplication of numbers is= " + z;
+
+           
+            document.getElementById("d").innerHTML = "division of numbers is= " + div(10, 6);
+
+
+            function add(a,b)
+            {
+                y=a+b;
+                return y;
+            }
+
+                function sub(a, b)
+                 {
+                        y = a - b;
+                        return y;
+                 }
+
+                 
+                    function mul(a, b) 
+                    {
+                        y = a * b;
+                        return y;
+                    }
+                     function div(a, b)
+                      {
+                            y = a / b;
+                            return y;
+                        }
+
+        </script>
+
+</body>
+
+
+<html>

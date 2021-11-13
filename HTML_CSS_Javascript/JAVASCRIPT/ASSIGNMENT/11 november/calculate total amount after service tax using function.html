@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title> ARITMATIC OPERATION</title>
+</head>
+
+
+
+<body>
+    <form>
+        <table border="2" width="450px" align="center">
+            <caption> ARITHMATIC OPERATION </caption>
+            <tr>
+                <td colspan="2"> enter payment </td>
+                <td colspan="2"> <input type="textbox" id="c"> </td>
+            </tr>
+            <tr>
+                <td colspan="2"> enter service tax in percentage </td>
+                <td colspan="2"> <input type="textbox" id="d"> </td>
+            </tr>
+            <tr>
+                <td colspan="2"> total amount </td>
+                <td colspan="2"> <output id="e"> </output> </td>
+            </tr>
+            <tr>
+                <td colspan="2"> service tax </td>
+                <td colspan="2"> <output id="f"> </output> </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+
+                    <table border="1" width="450px" align="center">
+                        <tr>
+
+                            <td> <input type="button" value="calculation" onclick="amt_tex()"> </td>
+
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+
+        function amt_tex() {
+            p = parseInt(document.getElementById("c").value);
+            s = parseInt(document.getElementById("d").value);
+            ta = p - p * (s / 100);
+            document.getElementById("e").innerHTML = +ta;
+            st = p * (s / 100);
+            document.getElementById("f").innerHTML = +st;
+        }
+
+    </script>
+
+</body>
+<html>

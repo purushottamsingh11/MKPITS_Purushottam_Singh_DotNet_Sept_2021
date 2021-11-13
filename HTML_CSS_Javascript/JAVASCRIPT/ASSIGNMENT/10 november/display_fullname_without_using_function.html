@@ -1,0 +1,30 @@
+<html>
+    <head>
+    <title> FULL NAME </title>
+
+    
+    </head>
+   
+    <body> 
+            <p id="a"></p>
+            <script>
+                var fname, lname;
+                fname = prompt("enter first name: ", "tanu");
+                lname = prompt("enter last name: ", "singh");
+
+                c = personalInformation(fname, lname);
+                document.getElementById("a").innerHTML = "your full name is:" +c;
+
+                function personalInformation(fname, lname) 
+                {
+                    x = fname + " " + lname;
+                    return x;
+
+                }
+            </script>
+    </body>
+
+</html>
+
+
+         

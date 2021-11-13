@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <title> ARITMATIC OPERATION</title>
+</head>
+
+<body>
+
+    
+    <form>
+        <table border="2" width="320px" align="center">
+            <caption> ARITHMATIC OPERATION </caption>
+            <tr>
+                <td colspan="2"> enter first number </td>          
+                <td colspan="2"> <input type="textbox" id="c"> </td>
+            </tr>
+             <tr>
+                 <td colspan="2"> enter second number </td>
+                 <td colspan="2"> <input type="textbox" id="d"> </td>
+            </tr>
+            <tr>
+                <td colspan="2"> ANSWER </td>
+                <td colspan="2"> <output id="e"> </output>  </td>
+            </tr>
+            <tr>
+                <td colspan="4"> 
+                    
+                    <table border="1" width="320px" align="center">
+                        <tr>
+                        <td> <input type="button" value="add" onclick="add()"> </td>
+                        
+                        <td> <input type="button" value="sub" onclick="sub()"></td>
+                        
+                        <td> <input type="button" value="mul" onclick=" mul()"></td>
+                        
+                        <td> <input type="button" value="div" onclick="  div()"></td>
+                        </tr>
+                    </table>
+
+
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+
+    
+        <script>
+                        
+           function add()
+            {
+             a = parseInt(document.getElementById("c").value);
+             b = parseInt(document.getElementById("d").value);
+             y=a+b;
+             document.getElementById("e").innerHTML= +y;
+            }
+
+                function sub()
+                 {
+                    a = document.getElementById("c").value;
+                    b = document.getElementById("d").value;
+                    document.getElementById("e").innerHTML = +(a-b);
+                 }
+
+                 
+                    function mul() 
+                    {
+                      a = document.getElementById("c").value;
+                      b = document.getElementById("d").value;
+                    document.getElementById("e").innerHTML = +(a*b);
+                    }
+
+
+                       function div()
+                          {
+                             a = document.getElementById("c").value;
+                             b = document.getElementById("d").value;
+                             y = a / b;
+                            document.getElementById("e").innerHTML = +y;
+                          }
+
+        </script>
+
+</body>
+
+
+<html>
+
+
+
+
+
+     

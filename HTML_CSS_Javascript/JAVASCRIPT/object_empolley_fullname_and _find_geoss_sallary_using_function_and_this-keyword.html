@@ -1,0 +1,36 @@
+<html>
+    <head>
+    <title> CAR PROPERTY </title>
+    </head>
+
+
+    <body>
+        <h2> object in javascript </h2>
+        <P id="a"> </P>
+        <h4 id="b"></h4>
+     <script> 
+     const emp={ id:508,
+                 fname:"summit",
+                 lname:"singh",
+                 age:29,
+                 department:"IT",
+                 sallary:45000,
+                 fullname :function(){
+                     return this.fname +" "+ this.lname;
+                 },
+                 grosssal: function(){
+                     let roomrent=5000;
+                     g_sallary = this.sallary + (this.sallary * 0.1) + roomrent*0.4 + 240;
+                     return   g_sallary;
+                 }
+               };
+      document.getElementById("b").innerHTML=  "empolley fullname is: " + emp.fullname() + "<br>" +
+                                               "and his gross sallary is: " +emp.grosssal();
+                                               
+                      //or method-2 to display grosssallary using other id 
+
+      document.getElementById("a").innerHTML = "empolley gross  sallary is: " + emp.grosssal();                                                
+     </script>
+    </body>
+   
+</html>

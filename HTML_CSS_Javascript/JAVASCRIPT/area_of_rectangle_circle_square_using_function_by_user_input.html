@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <script>
+        
+                var l , b ,  r , x;
+                l = parseInt(prompt("enter length= ", "1"));
+                b = parseInt(prompt("enter breath= ", "2"));
+                x = area_of_rect(l, b);
+                console.log("area of rectangle is: " + x); 
+
+
+                r = parseFloat(prompt("enter radius= ", "1")); 
+                console.log("area of circle is: " + area_of_circle(r));
+                
+
+              let  a = parseInt(prompt("enter side= ", "1"));
+              var  t = area_of_square(a);
+              console.log("area of square is: " + t);       // due to this output will be in console.
+              document.write("area of sqrare= " + t);      // due to this output will be in brouswr.
+              alert("area of square is equal to: " + t);  // due to this output will be at popup window.
+
+
+
+                function area_of_rect(ln,br)
+                    {
+                      let y;
+                      y=ln*br;
+                      return y;
+                    }
+
+
+
+                function area_of_circle(radius)
+                    {
+                        const pi=3.14;                 //  const pi;    this is wrong initilazion for const.
+                                                      //  pi = 3.14;  
+                        let z=pi*radius*radius;
+                        return z;
+                    }
+
+               
+                
+                function area_of_square(side)
+                    {
+                     return   side * side;
+                    }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+
+<html>

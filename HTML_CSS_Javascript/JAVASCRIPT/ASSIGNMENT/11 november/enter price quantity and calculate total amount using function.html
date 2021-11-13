@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title> BILLING FOR SHOP</title>
+</head>
+
+<body>
+
+
+    <form>
+        <table border="2" width="350px" align="center">
+            <caption> BILLING </caption>
+            <tr>
+                <th>enter price per iteam</th>
+                <th>enter quantity</th>
+                <th>amount</th>
+            </tr>
+            <tr>
+                <td> <input type="text" id="a"> </td>
+                <td><input type="text" id="b"> </td>
+                <td> <output id="c"> </output> </td>
+            </tr>
+            <tr>
+                <td> <input type="text" id="d"> </td>
+                <td><input type="text" id="e"></td>
+                <td> <output id="f"> </output> </td>
+            </tr>
+            <tr>
+                <td> <input type="text" id="g"> </td>
+                <td><input type="text" id="h"></td>
+                <td> <output id="i"> </output> </td>
+            </tr>
+            <tr>
+                <td> YOUR TOTAL BILL </td>
+                <td colspan="2"> <output id="j"> </output> </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <table border="2" align="center">
+                        <tr>
+                            <td> <input type="button" value="calculate for row1" onclick="amount()"> </td>
+                            <td> <input type="button" value="calculate for row2" onclick="amounta()"> </td>
+                            <td> <input type="button" value="calculate for row3" onclick="amountb()"> </td>
+                            <td> <input type="button" value="calculatebill" onclick="bill()"> </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+
+
+    <script>
+
+        function amount() {
+            p = parseInt(document.getElementById("a").value);
+            n = parseInt(document.getElementById("b").value);
+            ta = n * p;
+            document.getElementById("c").innerHTML = ta;
+        }
+
+        function amounta() {
+            pa = parseInt(document.getElementById("d").value);
+            na = parseInt(document.getElementById("e").value);
+            taa = na * pa;
+            document.getElementById("f").innerHTML = taa;
+        }
+        function amountb() {
+            pb = parseInt(document.getElementById("g").value);
+            nb = parseInt(document.getElementById("h").value);
+            tab = nb * pb;
+            document.getElementById("i").innerHTML = tab;
+        }
+        function bill() {
+            tb = ta + taa + tab;
+            document.getElementById("j").innerHTML = tb;
+        }
+    </script>
+
+</body>
+
+
+<html>

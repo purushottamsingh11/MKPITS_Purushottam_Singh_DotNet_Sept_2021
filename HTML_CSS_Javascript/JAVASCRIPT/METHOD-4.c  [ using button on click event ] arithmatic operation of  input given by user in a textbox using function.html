@@ -1,0 +1,88 @@
+<html>
+
+<head></head>
+
+<body>
+
+    
+    <form>
+        <table border="2" width="320px" align="center">
+            <caption> ARITHMATIC OPERATION </caption>
+            <tr>
+                <td colspan="2"> enter first number </td>          
+                <td colspan="2"> <input type="textbox" id="c"> </td>
+            </tr>
+             <tr>
+                 <td colspan="2"> enter second number </td>
+                 <td colspan="2"> <input type="textbox" id="d"> </td>
+            </tr>
+            <tr>
+                <td colspan="4"> 
+                    
+                    <table border="1" width="320px" align="center">
+                        <tr>
+                        <td> <input type="button" value="add" onclick="add()"> </td>
+                        
+                        <td> <input type="button" value="sub" onclick="sub()"></td>
+                        
+                        <td> <input type="button" value="mul" onclick=" mul()"></td>
+                        
+                        <td> <input type="button" value="div" onclick="  div()"></td>
+                        </tr>
+                    </table>
+
+
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+
+    
+        <script>
+                        
+           function add()
+            {
+             a = parseInt(document.getElementById("c").value);
+             b = parseInt(document.getElementById("d").value);;
+             y=a+b;
+             alert("addition of these two number is= "+y);
+            }
+
+                function sub()
+                 {
+                    a = document.getElementById("c").value;
+                    b = document.getElementById("d").value;
+                    alert("subtration of these two number is= "  +(a - b));
+                 }
+
+                 
+                    function mul() 
+                    {
+                      a = document.getElementById("c").value;
+                      b = document.getElementById("d").value;
+                      alert("multiplication of these two number is:" + (a * b));
+                    }
+
+
+                       function div()
+                          {
+                             a = document.getElementById("c").value;
+                             b = document.getElementById("d").value;
+                             y = a / b;
+                             alert("division  of these two number is:" + y);
+                          }
+
+        </script>
+
+</body>
+
+
+<html>
+
+
+
+
+
+     

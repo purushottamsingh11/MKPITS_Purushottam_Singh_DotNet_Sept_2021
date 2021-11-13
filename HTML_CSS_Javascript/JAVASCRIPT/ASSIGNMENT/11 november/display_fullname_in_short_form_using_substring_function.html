@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title> FULL NAME IN SHORT FORM </title>
+</head>
+
+<body>
+    <h3 id="a"></h3>
+    <script>
+        var fname, mname, lname;
+        fname = prompt("enter first name: ", "Tanu");
+        mname = prompt("enter middie name: ", "Kumar");
+        lname = prompt("enter last name: ", "Singh");
+        c = personalInformation(fname, mname, lname);
+        document.getElementById("a").innerHTML = "your full name in upper letter is:" + c;
+
+        function personalInformation(fname, mname, lname) {
+            var f = fname.substring(0, 1);
+            var m = mname.substring(0, 1);
+
+
+            x = f + "." + m + "." + lname;
+            return x;
+
+        }
+    </script>
+</body>
+
+</html>
